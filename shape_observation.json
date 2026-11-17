@@ -1,0 +1,16 @@
+{
+  "mode": "observation_only",
+  "block_region_normalized_xyxy": [0.45, 0.05, 0.995, 0.92],
+  "hole_strip_region_normalized_xyxy": [0.28, 0.12, 0.49, 0.96],
+  "region_note": "Image regions selected for the current fixed camera view; not verified reachable or collision-free robot regions",
+  "colours": {
+    "blue": {"hsv_low": [95, 85, 30], "hsv_high": [130, 255, 255], "expected_shape": "square", "user_measured_height_mm": 100, "observation_height_tolerance_mm": 10},
+    "yellow": {"hsv_low": [20, 110, 65], "hsv_high": [35, 255, 255], "expected_shape": "triangle"},
+    "lime": {"hsv_low": [35, 110, 65], "hsv_high": [72, 255, 255], "expected_shape": "circle"},
+    "orange": {"hsv_low": [0, 110, 60], "hsv_high": [19, 255, 255], "expected_shape": "hexagon"}
+  },
+  "rim_hsv_low": [0, 90, 45],
+  "rim_hsv_high": [22, 255, 255],
+  "provisional_alignment_report": "data/camera_calibration/robot_alignment_20261106_001452_620286/provisional_alignment.json",
+  "ready_for_robot_motion": false
+}

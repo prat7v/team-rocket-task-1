@@ -1,0 +1,30 @@
+{
+  "status": "camera_baseline_only_robot_calibration_incomplete",
+  "camera_serial": "108322073511",
+  "baseline_session": "data/camera_calibration/20261104_003754_804985",
+  "ruler_reference_mm": 485,
+  "camera_mount": "fixed_to_table",
+  "object_start_locations": "anywhere_in_verified_reachable_region",
+  "task": "insert_objects_into_matching_shape_holes",
+  "shape_matches": {
+    "triangle": "triangle_hole",
+    "square": "square_hole",
+    "hexagon": "hexagon_hole",
+    "circle": "circular_hole"
+  },
+  "camera_to_robot_transform": null,
+  "robot_base_frame_definition": null,
+  "robot_geometry": null,
+  "joint_limits": null,
+  "reachable_pick_region": null,
+  "object_dimensions_mm": null,
+  "hole_board_surface_plane": null,
+  "hole_poses_in_robot_frame": null,
+  "hole_clearances_mm": null,
+  "grasp_and_insertion_orientations": null,
+  "gripper_calibration": null,
+  "safe_approach_clearances_mm": null,
+  "validated_insertion_depths_mm": null,
+  "motion_authorized": false,
+  "ready_for_automatic_operation": false
+}

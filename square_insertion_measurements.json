@@ -1,0 +1,36 @@
+{
+  "object": "blue square prism",
+  "hole": "square hole",
+  "measurement_source": "User ruler measurements; approximate",
+  "block_width_mm": 40,
+  "block_height_mm": 100,
+  "square_hole_inside_width_mm": 50,
+  "square_hole_inside_width_confirmation": "User explicitly rechecked and confirmed exactly 50 mm; retained as physical reference rather than replacing with rough image estimate",
+  "rough_image_width_discrepancy": {"estimate_mm_range": [46, 47], "method": "Manually selected low-resolution rim corners after automatic contour failure", "status": "Image localization or model discrepancy unresolved; do not rescale calibration to force agreement"},
+  "nominal_width_difference_mm": 10,
+  "nominal_clearance_per_side_mm": 5,
+  "clearance_assumptions": [
+    "Block cross-section is 40 mm square at the insertion height",
+    "Hole is 50 mm square along both axes",
+    "Block is centred and its faces are parallel to hole edges"
+  ],
+  "square_hole_second_inside_width_mm": null,
+  "hole_top_surface_height_relative_green_board_mm": -21,
+  "hole_top_surface_height_source": "User measured wooden surface 21 mm below green surface; robot Z=-21 assumes earlier green-surface Z=0 reference is correct",
+  "hole_center_robot_xyz_mm": [-295, -26, -21],
+  "hole_center_Y_is_center_not_nearest_edge": true,
+  "hole_center_Y_confirmation_source": "User explicitly confirmed Y=-26 mm was measured to the centre of the 50 mm opening",
+  "hole_center_measurement_source": "X=-295 mm and Y=-26 mm independently supplied by user; Z=-21 mm derived from prior user surface-height measurement",
+  "hole_center_camera_comparison": {"rough_camera_xyz_mm": [-290.55183276590196, -47.53304636150424, -21], "xy_discrepancy_mm": 21.98768467458987, "status": "Unresolved; rough camera estimate must not be used as a movement target"},
+  "vertical_insertion_reach_check": {"distance_from_stated_origin_mm": 296.14354627443765, "distance_from_official_model_base_axis_mm": 308.0990100600779, "optimistic_vertical_tool_radius_bound_mm": 254.23056476879765, "excess_over_optimistic_bound_mm": 53.86844529128025, "assumptions": "Standard arm geometry and stated robot-frame reference; ignores joint limits, approach height and collision clearance", "current_layout_passes_necessary_vertical_reach_check": false},
+  "hole_orientation_robot_frame": null,
+  "validated_insertion_depth_mm": null,
+  "gripper_force_limit": null,
+  "status": "current_layout_fails_necessary_vertical_insertion_reach_check",
+  "limitations": [
+    "Camera check at a single separate location showed approximately 2 to 3.5 mm discrepancy",
+    "Actual robot positioning, grasp offset, block tilt and yaw error remain untested",
+    "Nominal clearance is not an approved positioning tolerance"
+  ],
+  "ready_for_robot_motion": false
+}

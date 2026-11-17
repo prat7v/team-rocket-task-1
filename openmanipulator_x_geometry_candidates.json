@@ -1,0 +1,26 @@
+{
+  "status": "official_reference_models_not_yet_validated_on_this_arm",
+  "geometry_source": "https://raw.githubusercontent.com/ROBOTIS-GIT/open_manipulator/main/open_manipulator_description/urdf/open_manipulator_x/open_manipulator_x_arm.urdf.xacro",
+  "encoder_source": "https://raw.githubusercontent.com/ROBOTIS-GIT/dynamixel_hardware_interface/main/param/dxl_model/xm430_w350.model",
+  "units": "millimetres_and_radians",
+  "arm_ids": [11, 12, 13, 14],
+  "encoder_radians_per_tick": 0.0015339807878856412,
+  "encoder_offset_radians": -3.141592653589793,
+  "current_official_model": {
+    "joint_origins_xyz_mm": [[12, 0, 0], [0, 0, 59.5], [24, 0, 128], [124, 0, 0]],
+    "joint_axes": ["z", "y", "y", "y"],
+    "joint_limits_rad": [[-3.141592653589793, 3.141592653589793], [-1.5, 1.5], [-1.5, 1.4], [-1.7, 1.97]],
+    "end_effector_origin_from_wrist_mm": [126, 0, 0]
+  },
+  "legacy_reference_candidate": {
+    "source": "https://emanual.robotis.com/docs/en/platform/openmanipulator_x/ros_controller_check_setting/",
+    "joint_origins_xyz_mm": [[12, 0, 17], [0, 0, 58], [24, 0, 128], [124, 0, 0]],
+    "end_effector_origin_from_wrist_mm": [126, 0, 0],
+    "note": "Alternative geometry only; do not select solely to improve a camera fit"
+  },
+  "physical_joint_zero_reference_verified": false,
+  "robot_base_origin_verified_against_official_model": false,
+  "grasp_tool_reference_verified": false,
+  "physical_collision_limits_verified": false,
+  "ready_for_robot_motion": false
+}
