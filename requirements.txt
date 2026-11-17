@@ -1,0 +1,5 @@
+numpy
+opencv-contrib-python
+pyrealsense2
+dynamixel-sdk
+pytest
