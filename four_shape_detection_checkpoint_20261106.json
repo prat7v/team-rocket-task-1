@@ -1,0 +1,13 @@
+{
+  "status": "all_four_shapes_matched_in_two_separate_captures",
+  "verification_scope": "Camera perception only; no motor access",
+  "initial_successful_report": "data/camera_calibration/20261106_014020_153606/shape_sorting_20261106_014116_190831/report.json",
+  "fresh_confirmation_report": "data/camera_calibration/20261106_014158_245360/shape_sorting_20261106_014213_417424/report.json",
+  "confirmed_pairs": {"blue": "square", "yellow": "triangle", "lime": "circle", "orange": "hexagon"},
+  "detector_settings_unchanged_between_successful_captures": true,
+  "software_tests_passed": 26,
+  "robot_motion_executed": false,
+  "physical_grasp_verified": false,
+  "fixed_layout_release_path_verified": false,
+  "ready_for_robot_motion": false
+}

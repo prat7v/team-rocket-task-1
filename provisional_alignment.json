@@ -1,0 +1,162 @@
+{
+  "status": "provisional_measured_alignment_requires_independent_review",
+  "units": "millimetres",
+  "measurements": {
+    "status": "reference_points_recorded_pending_alignment_review",
+    "measurement_issue": {
+      "segment": "A-C",
+      "measured_distance_mm": 85,
+      "expected_from_print_dimensions_mm": 84,
+      "difference_mm": 1,
+      "original_coordinate_interpretation_corrected": true,
+      "direction_confirmed": true,
+      "note": "User confirms C is farther from origin along negative X. Absolute C calculated from A plus relative displacement; 1 mm size discrepancy retained."
+    },
+    "units": "millimetres",
+    "robot_frame_source": "User confirms marked X/Y arrows come from actual robot coordinate frame; exact origin and height must be used",
+    "camera_observation": "data/camera_calibration/aruco_stability_20261105_235607_306690/report.json",
+    "board_marker_side_mm": 37,
+    "board_horizontal_gap_mm": 54,
+    "board_vertical_gap_mm": 10,
+    "board_must_remain_fixed_since_observation": true,
+    "points": [
+      {
+        "label": "A",
+        "description": "Outer upper-left black corner of marker ID0, with printed IDs upright",
+        "board_xyz_mm": [
+          0,
+          0,
+          0
+        ],
+        "robot_xyz_mm": [
+          -158,
+          0,
+          0
+        ],
+        "measurement_source": "User ruler measurement; X sign explicitly corrected by user; origin and zero height not independently verified",
+        "use": "fit"
+      },
+      {
+        "label": "B",
+        "description": "Outer upper-right black corner of marker ID1, with printed IDs upright",
+        "board_xyz_mm": [
+          128,
+          0,
+          0
+        ],
+        "robot_xyz_mm": [
+          -158,
+          -129,
+          0
+        ],
+        "measurement_source": "User ruler measurement; origin and zero height not independently verified",
+        "use": "fit"
+      },
+      {
+        "label": "C",
+        "description": "Outer lower-left black corner of marker ID2, with printed IDs upright",
+        "board_xyz_mm": [
+          0,
+          84,
+          0
+        ],
+        "robot_xyz_mm": [
+          -243,
+          0,
+          0
+        ],
+        "distance_from_A_mm": 85,
+        "user_reported_relative_x_mm": -85,
+        "measurement_source": "Calculated from A plus user-measured 85 mm displacement along negative X; direction explicitly confirmed; Y and Z retained from user report",
+        "use": "fit"
+      },
+      {
+        "label": "D",
+        "description": "Outer lower-right black corner of marker ID3, independently measured validation point",
+        "board_xyz_mm": [
+          128,
+          84,
+          0
+        ],
+        "robot_xyz_mm": [
+          -243,
+          -129,
+          0
+        ],
+        "measurement_source": "User supplied after request for independent measurement from robot origin; origin and zero height not independently verified",
+        "use": "validate"
+      }
+    ],
+    "ready_for_robot_motion": false
+  },
+  "T_robot_from_board": [
+    [
+      0.0009301534958124387,
+      -0.9999995674071432,
+      0.0,
+      -158.37303199508798
+    ],
+    [
+      -0.9999995674071434,
+      -0.0009301534958124182,
+      0.0,
+      -0.3073074927458066
+    ],
+    [
+      0.0,
+      0.0,
+      -0.9999999999999996,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_robot_from_camera": [
+    [
+      0.9978805016204125,
+      -0.05269705365897403,
+      0.0381775460376481,
+      -246.9867589670447
+    ],
+    [
+      -0.060047377874929635,
+      -0.971769364357677,
+      0.22816357050638322,
+      -129.24127118173323
+    ],
+    [
+      0.025076221727743285,
+      -0.2299724397216742,
+      -0.972874020658544,
+      487.45831589178675
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fit_errors_mm": [
+    0.4833122846121709,
+    0.7378357387728097,
+    0.736001859537924
+  ],
+  "independent_validation": [
+    {
+      "label": "D",
+      "error_mm": 0.9666245692243238
+    }
+  ],
+  "selected_camera_frame": 46,
+  "limitations": [
+    "Ruler and origin definition errors affect absolute accuracy",
+    "Marker and camera must not move after observation",
+    "No automatic accuracy threshold or movement approval"
+  ],
+  "ready_for_robot_motion": false
+}
